@@ -1,7 +1,100 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     min-height: 100vh;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    height: 100vh
+}
+
+/* Sidebar Main*/
+
+.sidebar {
+    background-color: #6A8D73;
+    color: #E4FFE1;
+    display: grid;
+    padding: 0px 20px;
+    grid-template-rows: 80px auto auto 1fr;
+    gap: 45px;
+    align-items: start;
+}
+
+.sidebar a {
+    color: #E4FFE1;
+}
+
+/* Side Bar Title */
+
+.sidebar-title {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 80px;
+    align-items: center; 
+    gap: 10px;
+}
+
+.sidebar-title h1 {
+    font-size: 1.8rem;
+}
+
+.sidebar-title img {
+    width: 3rem;    
+}
+
+.sidebar-title-icon {
+    justify-self: center;
+}
+/* Navigation Section */
+
+.nav-text {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    align-items: center; 
+    gap: 10px;
+}
+
+/* nav + setting */
+
+.nav-icon, .settings-icons {
+    justify-self: center;
+}
+
+.nav-text img, .settings-icons img {
+    width: 1.8rem; 
+}
+
+.nav-text, .settings {
+    font-size: 1.3rem;
+}
+
+/* Settings Section */
+
+.settings {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center; 
+    gap: 10px;
+}
+
+
+/* Main Content Area */
+.main {
+    background-color: #F4FDD9;
 }
