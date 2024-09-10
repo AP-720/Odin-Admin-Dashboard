@@ -16,9 +16,19 @@ a {
     text-decoration: none;
 }
 
+h3 {
+    font-size: 1.5rem;
+    margin: 0px 0px;
+}
+
+p {
+    margin: 0px 0px;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto;
     height: 100vh
 }
 
@@ -93,8 +103,135 @@ a {
     gap: 10px;
 }
 
-
 /* Main Content Area */
 .main {
     background-color: #F4FDD9;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+/* Header */
+.header {
+    background-color: #f6fcf8;
+    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.1);
+    grid-row: 1;
+    display: grid;
+    grid-template-row: 80px 1fr;
+    padding: 0 60px;
+    padding-bottom: 10px;
+}
+
+/* Top Header */
+.header-top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 80px ;
+    
+}
+
+.icon {
+    width: 1.5rem;
+}
+
+.search-bar {
+    align-self: center;
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr; */
+    
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+input[type="search"] {
+    width: 100%;
+    border-radius: 50px;
+    padding: 8px 15px;
+    border: 1px solid #cfcfcf;
+    background-color: #F4FDD9;
+}
+
+.profile-pic {
+    width: 3rem;
+}
+
+.profile {
+    align-self: center;
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    
+}
+
+.profile a:link {
+    font-size: 1.5rem;
+    color: inherit;
+    font-weight: bold;
+}
+.profile a:visited {
+    color: inherit;
+}
+
+/* Bottom Header */
+.header-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: 1fr; */
+}
+
+.welcome {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.profile-pic {
+    /* border: 1px red solid; */
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.profile-pic-big {
+    width: 5rem;
+}
+
+.welcome-text {
+    display: inline-block;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.welcome-text p {
+    margin-bottom: 10px;
+}
+
+.buttons {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    justify-self: end;
+    display: flex;
+    gap: 25px;
+}
+
+.buttons button {
+    background-color: #6A8D73;
+    color: #f6fcf8;
+    font-size: 1.2rem;
+    padding: 7px 30px;
+    border-radius: 50px;
+    border: 3px solid #6A8D73;
+}
+
+.buttons button:hover {
+    border: 3px solid #F0A868;
+}
+
+/* Main Content */
+.content-container {
+    grid-row: 2;
 }
