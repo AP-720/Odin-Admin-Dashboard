@@ -224,7 +224,7 @@ input[type="search"] {
     font-size: 1.2rem;
     padding: 7px 30px;
     border-radius: 50px;
-    border: 3px solid #6A8D73;
+    border: 3px solid #6A8D73;`
 }
 
 .buttons button:hover {
@@ -234,4 +234,5 @@ input[type="search"] {
 /* Main Content */
 .content-container {
     grid-row: 2;
+    
 }
